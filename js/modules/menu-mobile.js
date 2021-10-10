@@ -17,11 +17,11 @@ export default class MenuMobile {
   openMenu(event) {
     this.menuList.classList.add(this.activeClasss);
     this.menuButton.classList.add(this.activeClasss);
-    console.log(this.activeClasss)
+    console.log(this.activeClasss);
     outSideClick(this.menuList, this.eventos, () => {
       this.menuButton.classList.remove(this.activeClasss);
       this.menuList.classList.remove(this.activeClasss);
-      console.log(`${this.activeClasss} funcao outsideclick`)
+      console.log(`${this.activeClasss} funcao outsideclick`);
     });
   }
 

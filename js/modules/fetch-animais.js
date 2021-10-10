@@ -1,4 +1,4 @@
-import AnimaNumeros from './anima-numeros.js';
+import AnimaNumeros from "./anima-numeros.js";
 
 export default function fechAnimais(url, target) {
   //Puxa os animais através de um arquivo json e cria cada aniamis utilizando createAnimal
@@ -24,14 +24,14 @@ export default function fechAnimais(url, target) {
 
   // Anima os números de cada animal
   function animaAnimaisNumeros() {
-    const animaNumeros = new AnimaNumeros('[data-numero]', '.numeros', 'ativo');
+    const animaNumeros = new AnimaNumeros("[data-numero]", ".numeros", "ativo");
     animaNumeros.init();
   }
 
   //Cria a div contendo informações com o total de animais
   function createAnimal(animal) {
-    const div = document.createElement('div');
-    div.classList.add('numero-animal');
+    const div = document.createElement("div");
+    div.classList.add("numero-animal");
     div.innerHTML = `<h3>${animal.species}</h3><span data-numero>${animal.total}</span>`;
     return div;
   }

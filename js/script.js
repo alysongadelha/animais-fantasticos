@@ -35,15 +35,14 @@ tooltip.init();
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
-const dropdownMenu = new DropdownMenu('[data-dropdown]');
+const dropdownMenu = new DropdownMenu("[data-dropdown]");
 dropdownMenu.init();
 
-const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
-menuMobile.init()
+const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]');
+menuMobile.init();
 
-const funcionamento = new Funcionamnento('[data-semana]',"aberto");
+const funcionamento = new Funcionamnento("[data-semana]", "aberto");
 funcionamento.init();
-
 
 fechAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");

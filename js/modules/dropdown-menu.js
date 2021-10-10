@@ -31,7 +31,7 @@ export default class DropdownMenu {
       });
     });
   }
-  
+
   init() {
     if (this.dropdownMenus.length) this.addDropDownMEnuEvent();
     return this;
