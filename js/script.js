@@ -4,11 +4,11 @@ import TabNav from "./modules/tabnav.js";
 import Modal from "./modules/modal.js";
 import Tooltip from "./modules/tooltip.js";
 import DropdownMenu from "./modules/dropdown-menu.js";
-import initFuncionamnento from "./modules/funcionamento.js";
 import fechAnimais from "./modules/fetch-animais.js";
 import Accordion from "./modules/accordion.js";
 import fetchBitcoin from "./modules/fetch-bitcoin.js";
 import MenuMobile from "./modules/menu-mobile.js";
+import Funcionamnento from "./modules/funcionamento.js";
 
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
@@ -41,7 +41,9 @@ dropdownMenu.init();
 const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="list"]')
 menuMobile.init()
 
-initFuncionamnento();
+const funcionamento = new Funcionamnento('[data-semana]',"aberto");
+funcionamento.init();
+
 
 fechAnimais("../../animaisapi.json", ".numeros-grid");
 fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
